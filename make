@@ -22,7 +22,7 @@ var setup = {
             },
         }
     },
-    ujs = require("uglify-js"),
+    ujs = require("uglify-js"), // using npm install uglify-js to install a local copy
     jsp = ujs.parser,
     pro = ujs.uglify,
     fs = require("fs"),

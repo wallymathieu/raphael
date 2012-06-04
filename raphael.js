@@ -152,8 +152,7 @@
         return current_event;
     };
     
-    
-    eve.off = eve.unbind = function (name, f) {
+    eve.unbind = function (name, f) {
         var names = name.split(separator),
             e,
             key,
@@ -3752,7 +3751,7 @@
 // │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
 // │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
 // └─────────────────────────────────────────────────────────────────────┘ \\
-window.Raphael.svg && function (R) {
+window.Raphael && window.Raphael.svg && function (R) {
     var has = "hasOwnProperty",
         Str = String,
         toFloat = parseFloat,
@@ -4840,6 +4839,7 @@ window.Raphael.svg && function (R) {
     }
 }(window.Raphael);
 
+
 // ┌─────────────────────────────────────────────────────────────────────┐ \\
 // │ Raphaël - JavaScript Vector Library                                 │ \\
 // ├─────────────────────────────────────────────────────────────────────┤ \\
@@ -4849,7 +4849,7 @@ window.Raphael.svg && function (R) {
 // │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
 // │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
 // └─────────────────────────────────────────────────────────────────────┘ \\
-window.Raphael.vml && function (R) {
+window.Raphael && window.Raphael.vml && function (R) {
     var has = "hasOwnProperty",
         Str = String,
         toFloat = parseFloat,
